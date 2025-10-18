@@ -35,7 +35,7 @@ class AURA_API AAuraPlayerController : public APlayerController
 
 		void CursorTrace();
 
-		IEnemyInterface* LastActor;
-		IEnemyInterface* ThisActor;
+		TObjectPtr<IEnemyInterface> LastActor;
+		TObjectPtr<IEnemyInterface> ThisActor;
 };
 
