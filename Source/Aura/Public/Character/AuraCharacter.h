@@ -20,10 +20,13 @@ public:
 	//~ Begin
 	virtual void PossessedBy(AController* NewController) override;
 	virtual void OnRep_PlayerState() override;
-	
+
+	/** Combat Interface */
+	virtual int32 GetPlayerLevel() const override;
+	/** end Combat Interface */
 protected:
 
 
 private:
-	void InitAbilityActorInfo();
+	virtual void InitAbilityActorInfo() override;
 };

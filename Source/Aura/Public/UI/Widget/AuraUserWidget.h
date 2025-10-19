@@ -6,6 +6,14 @@
 #include "Blueprint/UserWidget.h"
 #include "AuraUserWidget.generated.h"
 
+
+UENUM(Blueprintable)
+enum EGlobeType
+{
+	Health,
+	Mana
+};
+
 /**
  * 
  */

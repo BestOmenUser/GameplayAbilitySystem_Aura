@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "InputActionValue.h"
 #include "GameFramework/PlayerController.h"
+#include "Interaction/EnemyInterface.h"
 #include "AuraPlayerController.generated.h"
 
 class IEnemyInterface;
@@ -35,7 +36,7 @@ class AURA_API AAuraPlayerController : public APlayerController
 
 		void CursorTrace();
 
-		TObjectPtr<IEnemyInterface> LastActor;
-		TObjectPtr<IEnemyInterface> ThisActor;
+		IEnemyInterface* LastActor;
+		IEnemyInterface* ThisActor;
 };
 
